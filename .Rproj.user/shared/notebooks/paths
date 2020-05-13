@@ -1,3 +1,4 @@
+/Users/mselensky/Documents/Packages/qiimneysweepR/.gitignore="10E6784"
 /Users/mselensky/Documents/Packages/qiimneysweepR/DESCRIPTION="A729D6F5"
 /Users/mselensky/Documents/Packages/qiimneysweepR/NAMESPACE="F07A995"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/calc_taxa_mean.R="B3D3B96E"
@@ -6,7 +7,6 @@
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/generate_nodes.R="B5535945"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/get_nmds_scores.R="3845B461"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/get_nmds_vectors.R="A014F154"
-/Users/mselensky/Documents/Packages/qiimneysweepR/R/hello.R="9D72E9D6"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/import_asv_table.R="2A160C76"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/make_matrix.R="F2C36724"
 /Users/mselensky/Documents/Packages/qiimneysweepR/R/split_sample.R="1A7ACD6A"

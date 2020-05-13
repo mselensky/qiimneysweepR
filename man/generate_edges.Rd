@@ -13,7 +13,7 @@ generate_edges(abundance_matrix, nodes, dissimilarity, cutoff)
 
 \item{dissimilarity}{A defined dissimilarity metric; c("spearman", "kendall", "pearson") accepted.}
 
-\item{cutoff}{A defined asymptotic p-value cutoff for each edge. Rows with values higher than this cutoff are discarded.}
+\item{cutoff}{A defined dissimilarity cutoff for each edge. Positive and negative values are retained.}
 }
 \description{
 This function creates a list of network edges from an OTU or ASV abundance table. See nodes()

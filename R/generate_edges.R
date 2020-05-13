@@ -4,7 +4,7 @@
 #' @param abundance_matrix An OTU or ASV abundance table.
 #' @param nodes A nodes() object.
 #' @param dissimilarity A defined dissimilarity metric; c("spearman", "kendall", "pearson") accepted.
-#' @param cutoff A defined asymptotic p-value cutoff for each edge. Rows with values higher than this cutoff are discarded.
+#' @param cutoff A defined dissimilarity cutoff for each edge. Positive and negative values are retained.
 #' @keywords network edges
 #' @export
 #' @examples
@@ -43,11 +43,9 @@ generate_edges <- function(abundance_matrix, nodes, dissimilarity, cutoff) {
     rename(to = id) %>%
     select(from, to, all_of(dissimilarity), p_value)
 
-  if(dissimilarity %in% c("spearman", "kendall")) {
+  if(dissimilarity %in% c("spearman", "kendall", "pearson")) {
     edges <- filter(edges, abs(edges[dissimilarity]) >= cutoff) %>%
       mutate(is_positive = dissimilarity > 0)
-  } else if(dissimilarity == "pearson") {
-    edges <- filter(edges, edges[dissimilarity] >= cutoff)
   } else {
     edges
   }

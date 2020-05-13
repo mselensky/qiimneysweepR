@@ -4,7 +4,7 @@
 #' @param abundance_matrix An OTU or ASV abundance table.
 #' @param nodes A nodes() object.
 #' @param dissimilarity A defined dissimilarity metric; c("spearman", "kendall", "pearson") accepted.
-#' @param cutoff A defined asymptotic p-value cutoff for each edge. Rows with values higher than this cutoff are discarded.
+#' @param cutoff A defined dissimilarity cutoff for each edge. Rows with values higher than this cutoff are discarded.
 #' @keywords network edges
 #' @export
 #' @examples
