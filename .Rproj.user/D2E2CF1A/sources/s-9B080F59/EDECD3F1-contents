@@ -1,0 +1,10 @@
+color_scheme_vector <- function(color_list, color_by, long_count_data) {
+  color_name <- left_join(long_count_data, color_list)
+  color_name <- color_name %>%
+    ungroup() %>%
+    distinct(.[[color_by]], hex.color)
+
+  color_list_filtered <- as.character(color_name$hex.color)
+  names(color_list_filtered) <- color_name$`.[[color_by]]`
+  color_list_filtered
+} # Generate a ggplot-amenable color scheme as a named vector (from a dataframe). Color hexcodes must be in a column named "hex.color"

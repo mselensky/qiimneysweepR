@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589341884366.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5B148C6",
+    "lastKnownWriteTime" : 1589381492,
+    "last_content_update" : 1589381492417,
+    "path" : "~/Documents/Packages/qiimneysweepR/R/calc_taxa_mean.R",
+    "project_path" : "R/calc_taxa_mean.R",
+    "properties" : {
+        "cursorPosition" : "0,33",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

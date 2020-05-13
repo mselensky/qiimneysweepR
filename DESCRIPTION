@@ -1,0 +1,13 @@
+Package: qiimneysweepR
+Type: Package
+Title: An R-based workflow for processing imported QIIME2 artifacts
+Version: 0.0.0.9000
+Author: Matt Selensky
+Maintainer: Matt Selensky <mselensky@u.northwestern.edu>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: qiime2R, tidyverse, vegan, ggplot2, plotly, RColorBrewer
+RoxygenNote: 7.1.0

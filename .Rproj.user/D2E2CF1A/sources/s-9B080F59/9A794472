@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589381530741.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9A794472",
+    "lastKnownWriteTime" : 1589381549,
+    "last_content_update" : 1589381549771,
+    "path" : "~/Documents/Packages/qiimneysweepR/R/color_scheme_vector.R",
+    "project_path" : "R/color_scheme_vector.R",
+    "properties" : {
+        "cursorPosition" : "0,40",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

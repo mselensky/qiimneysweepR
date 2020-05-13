@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589381580325.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7039519A",
+    "lastKnownWriteTime" : 1589381594,
+    "last_content_update" : 1589381594651,
+    "path" : "~/Documents/Packages/qiimneysweepR/R/get_nmds_vectors.R",
+    "project_path" : "R/get_nmds_vectors.R",
+    "properties" : {
+        "cursorPosition" : "0,50",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

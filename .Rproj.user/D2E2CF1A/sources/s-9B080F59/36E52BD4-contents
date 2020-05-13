@@ -1,0 +1,9 @@
+make_matrix <- function(long_data, count_column_name, grouping_name) {
+  long_data_filtered <- long_data %>%
+    select(all_of(grouping_name), taxon, all_of(count_column_name))
+  asv_matrix <- long_data_filtered %>%
+    pivot_wider(names_from = "taxon", values_from = all_of(count_column_name)) %>%
+    column_to_rownames(var = grouping_name) %>%
+    as.matrix()
+  asv_matrix
+} # Prepares filtered ASV table for diversity analyses
