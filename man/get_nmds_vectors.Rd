@@ -9,12 +9,12 @@ get_nmds_vectors(env_output, top, pvalue)
 \arguments{
 \item{env_output}{Output object from envfit(),}
 
-\item{top}{Top *n* significant vectors to display.}
+\item{top}{Top n significant vectors to display.}
 
 \item{pvalue}{Defined p-value cutoff.}
 }
 \description{
-This function takes a vegan::envfit() output and extracts
+This function takes a vegan::envfit() output and extracts the top "n" significant vectors as a dataframe.
 }
 \examples{
 get_nmds_vectors

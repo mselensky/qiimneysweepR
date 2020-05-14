@@ -1,8 +1,8 @@
 #' Extract environmental vectors for NMDS plotting
 #'
-#' This function takes a vegan::envfit() output and extracts
+#' This function takes a vegan::envfit() output and extracts the top "n" significant vectors as a dataframe.
 #' @param env_output Output object from envfit(),
-#' @param top Top *n* significant vectors to display.
+#' @param top Top n significant vectors to display.
 #' @param pvalue Defined p-value cutoff.
 #' @keywords nmds vectors
 #' @export
