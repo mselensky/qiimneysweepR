@@ -16,7 +16,7 @@ split_table <- function(asv_table, metadata, metadata_column = ".", variable = "
     rownames_to_column(var = "sample-id") %>%
     pivot_longer(cols = 2:ncol(.), names_to = "taxon", values_to = "count") %>%
     left_join(., metadata, by = "sample-id") %>%
-    filter(.[[metadata_column]] == variable) %>%
+    filter(.[[metadata_column]] %in% variable) %>%
     select(-c(4:ncol(.))) %>%
     pivot_wider(names_from = "taxon", values_from = "count") %>%
     column_to_rownames(var = "sample-id")
