@@ -11,11 +11,6 @@
 #' generate_edges()
 
 generate_edges <- function(abundance_matrix, nodes, dissimilarity, cutoff) {
-  # rel_matrix <- asv_data %>%
-  #   pivot_wider(names_from = "taxon", values_from = "rel_abun") %>% # convert to table
-  #   column_to_rownames(var = "sample") %>%
-  #   as.matrix() # make relative abundance table
-
   dissim_matrix <- rcorr(abundance_matrix, type = dissimilarity) # pairwise dissim. and p-values
 
   dissim_asv <- dissim_matrix[["r"]] %>% # class data.frame w/ pairwise dissimilarity values

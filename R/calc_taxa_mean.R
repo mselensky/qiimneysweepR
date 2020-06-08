@@ -10,7 +10,7 @@
 #' calc_taxa_mean
 
 calc_taxa_mean <- function(asv_table, metadata, grouping_variable) {
-  asv_table <- asv_table %>%
+  asv_table <- asv_table %>% # I know this is a bit messy, I will make this more streamlined later
     as.data.frame() %>%
     rownames_to_column(var = "sample-id") %>%
     pivot_longer(cols = 2:ncol(.), names_to = "taxon", values_to = "count") %>%
@@ -20,12 +20,9 @@ calc_taxa_mean <- function(asv_table, metadata, grouping_variable) {
            sd_count = sd(count)) %>% ungroup() %>%
     distinct(`.[[grouping_variable]]`, taxon, .keep_all = TRUE) %>%
     ungroup() %>% group_by(`.[[grouping_variable]]`) %>%
-    mutate(mean_count_pct = 100*(mean_count/sum(mean_count))) %>%
-    mutate(taxonomy = str_remove_all(taxon, "D_0__|D_1__|D_2__|D_3__|D_4__|D_5__|D_6__")) %>%
-    separate(taxonomy, sep=';',
-             c("domain", "phylum", "class", "order", "family", "genus", "species")) %>%
-    mutate(phylum = if_else(phylum == "Proteobacteria", class, phylum)) %>%
+    mutate(mean_count_pct = 100*(mean_count/sum(mean_count)),
+           mean_count_pct_sd = sd(mean_count_pct)) %>%
     ungroup() %>%
-    select(-`.[[grouping_variable]]`)
+    select(`sample-id`, all_of(grouping_variable), taxon, mean_count, sd_count, mean_count_pct, mean_count_pct_sd)
   asv_table
 } # Calculate mean count, sd count, and mean pct count based on defined grouping variable from metadata
