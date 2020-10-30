@@ -4,14 +4,16 @@
 \alias{calc_taxa_mean}
 \title{Calculate mean taxon abundance}
 \usage{
-calc_taxa_mean(asv_table, metadata, grouping_variable)
+calc_taxa_mean(asv_table, metadata, grouping_variable, keep.vars)
 }
 \arguments{
-\item{asv_table}{An OTU or ASV abundance table.}
+\item{asv_table}{A rarefied OTU or ASV abundance table.}
 
 \item{metadata}{Qiime2-formatted metadata.}
 
-\item{grouping_variable}{A grouping variable that calculates mean abundance for each taxon in the defined group.}
+\item{grouping_variable}{A metadata grouping variable from which mean abundance for each taxon is calculated.}
+
+\item{keep.vars}{A boolean. If TRUE, keep all metadata variables in output. If FALSE, only keep grouping_variable in output.}
 }
 \description{
 This function calculates mean OTU or ASV count data based on a defined grouping_variable.
